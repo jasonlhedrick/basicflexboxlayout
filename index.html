@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello World 1!</title>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script>
+            var svg = d3.select("svg").style("background-color", black),
+            
+        </script>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                background: rgb(240, 240, 240);
+                padding: 0;
+                margin: 0;
+                font-size: 16px;
+            }
+            main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            footer {
+                display: flex;
+                height: 50px;
+                outline: 1px solid black;
+            }
+            .placeholderDiv {
+                width: 65%;
+                height: 250px;
+                background: pink;
+                outline: 1px solid black;
+            }
+            #mainNav {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                min-height: 75px;
+                
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            #mainNav li {
+                padding: 8px;
+                font-size: 1.3rem;
+                padding: 10px;
+            }
+            #mainNav li:hover {
+                outline: 2px solid black;
+            }
+
+            @media only screen and (min-width: 992px) {
+                #mainNav {
+                    flex-direction: row;
+                }
+                #mainNav a {
+                    text-decoration: none;
+                }
+                #mainNav a:hover {
+                    text-decoration: underline;
+                }
+                #mainNav li:hover {
+                    outline: none;
+                }
+                #mainNav :nth-child(1) {
+                    margin-left: auto;
+                }
+                #mainNav :nth-child(5) {
+                    margin-left: auto;
+                }
+                #mainNav :nth-child(6) {
+                    margin-right: 5%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul id="mainNav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Practice 1</a></li>
+                    <li><a href="#">Practice 2</a></li>
+                    <li><a href="#">Practice 3</a></li>
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="placeholderDiv"></div>
+            <div class="placeholderDiv"></div>
+            <div class="placeholderDiv"></div>
+            <div class="placeholderDiv"></div>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
